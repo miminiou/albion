@@ -519,7 +519,7 @@ theme.initStickyProductMeta = function() {
     Calculate when to detach fixed element to avoid content overlap.
     Subtract product copy height from the limit because plugin uses offset().top
   ==============================================================================*/
-    var calcLimit = theme.cache.$productSingleWrapper.offset().top + theme.cache.$productSingleWrapper.height();
+    var calcLimit = theme.cache.$productImages.offset().top + theme.cache.$productImages.height();
     calcLimit -= productCopyHeight;
 
     // Init sticky if desc shorter than images and fits in viewport
